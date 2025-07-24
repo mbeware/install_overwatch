@@ -1,4 +1,4 @@
-PACKAGE=install_overwatch
+PACKAGE=install-overwatch
 VERSION=1.0
 BUILD_DIR=$(CURDIR)/$(PACKAGE)
 DEB_FILE=$(PACKAGE)_$(VERSION)_all.deb
