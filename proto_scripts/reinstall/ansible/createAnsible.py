@@ -1,12 +1,12 @@
-import os
 import re
 import json
 from collections import defaultdict
 from datetime import datetime
 
-LOG_FILE = "/var/log/pkg_install_tracker/installations.log"
+INSTALL_LOG="
 
-# Parse ISO 8601 datetime
+LOG_FILE = "/var/log/log/install_overwatch.log"
+
 parse_ts = lambda ts: datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S")
 
 # Load log lines
@@ -28,7 +28,9 @@ for entry in entries:
     cmd = entry["command"]
     ts = entry["parsed_time"]
 
-    # Detect install/remove
+    # Detect install/remove 
+    #todo - replace regex with proper code. Can't debug them.
+
     action = None
     if re.search(r"\binstall\b", cmd):
         action = "install"
@@ -38,6 +40,8 @@ for entry in entries:
         continue
 
     # Extract package names
+    #todo - replace regex with proper code. Can't debug them.
+
     if mgr == "APT":
         match = re.findall(r"apt(?:-get)?\s+(?:install|remove)\s+(-y\s+)?([\w\-\.]+)", cmd)
         pkgs = [m[1] for m in match]
@@ -79,6 +83,42 @@ for pkg, events in package_events.items():
 final_installs.sort()
 
 # Generate playbook
+##########################################################################
+## sample playbook format : 
+##
+## - name: Reinstall packages from logs
+##   hosts: localhost
+##   become: yes
+##   tasks:
+##
+##     - name: Install APT packages
+##       apt:
+##         name:
+##           - htop
+##           - curl
+##           - git
+##         state: present
+##       when: ansible_facts['pkg_mgr'] == 'apt'
+##
+##     - name: Install PIP packages
+##       pip:
+##         name:
+##           - requests
+##           - flask
+##
+##     - name: Install Flatpak packages
+##       command: flatpak install -y flathub org.gimp.GIMP
+##       args:
+##         creates: /var/lib/flatpak/app/org.gimp.GIMP
+##
+##     - name: Install Cargo packages
+##       shell: cargo install ripgrep bat
+##       environment:
+##         PATH: "{{ ansible_env.HOME }}/.cargo/bin:{{ ansible_env.PATH }}"
+##########################################################################
+
+
+
 playbook = [
     {"name": f"Install {pkg}",
      "become": True,
