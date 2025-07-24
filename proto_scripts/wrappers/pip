@@ -1,0 +1,6 @@
+#!/bin/bash
+if [[ "$1" == "install" || "$1" == "uninstall" ]]; then
+  LOG_CMD="echo \"$(date) PIP action: pip $*\" >> $INSTALL_LOG"
+  eval $LOG_CMD
+fi
+exec /usr/bin/pip "$@"

@@ -1,0 +1,4 @@
+#!/bin/bash
+LOG_CMD="echo \"$(date) FLATPAK command: flatpak $*\" >> $INSTALL_LOG"
+eval $LOG_CMD
+exec /usr/bin/flatpak "$@"
