@@ -1,0 +1,70 @@
+
+Start-Date: 2024-11-03  05:00:24
+Commandline: apt-get -y --allow-downgrades full-upgrade
+Upgrade: cosmic-term:amd64 (0.1.0~1729621862~22.04~8d4bfb9, 0.1.0~1730247563~22.04~eba2eb3), libarchive13:amd64 (3.6.0-1ubuntu1.2, 3.6.0-1ubuntu1.3), cosmic-files:amd64 (0.1.0~1729645842~22.04~576b9ef, 0.1.0~1730233777~22.04~20f9292), cosmic-edit:amd64 (0.1.0~1729619758~22.04~5b0d05d, 0.1.0~1730235386~22.04~3d92409), cosmic-store:amd64 (0.1.0~1729525737~22.04~570596f, 0.1.0~1730234114~22.04~d78e23e), code:amd64 (1.95.0-1730153583, 1.95.1-1730355339)
+End-Date: 2024-11-03  05:00:40
+
+Start-Date: 2024-11-04  05:00:40
+Commandline: apt-get -y --allow-downgrades full-upgrade
+Upgrade: qownnotes:amd64 (24.10.3-1ubuntu3ppa1~jammy1, 24.11.0-1ubuntu3ppa1~jammy1)
+End-Date: 2024-11-04  05:00:42
+
+Start-Date: 2024-11-04  11:48:00
+Commandline: packagekit role='install-packages'
+Requested-By: mbeware (1000)
+Install: vorta:amd64 (0.8.3-1), borgbackup:amd64 (1.2.0-1, automatic), python3-appdirs:amd64 (1.4.4-2, automatic), python3-peewee:amd64 (3.14.8+dfsg-1build1, automatic), python3-outcome:amd64 (1.1.0-1, automatic), python3-sortedcontainers:amd64 (2.1.0-2, automatic), python3-pyqt5.sip:amd64 (12.9.1-1build1, automatic), python3-async-generator:amd64 (1.10-3, automatic), python3-pyqt5:amd64 (5.15.6+dfsg-1ubuntu3, automatic), python3-llfuse:amd64 (1.3.8+dfsg-2build1, automatic), python3-psycopg2:amd64 (2.9.2-1build2, automatic), python-peewee-doc:amd64 (3.14.8+dfsg-1build1, automatic), python3-mysqldb:amd64 (1.4.6-1build1, automatic), python3-bcrypt:amd64 (3.2.0-1build1, automatic), python3-msgpack:amd64 (1.0.3-1build1, automatic), python3-pyfuse3:amd64 (3.2.0-3build1, automatic), python3-trio:amd64 (0.19.0-1, automatic), python3-paramiko:amd64 (2.9.3-0ubuntu1.2, automatic)
+End-Date: 2024-11-04  11:48:04
+
+Start-Date: 2024-11-04  16:31:05
+Requested-By: mbeware (1000)
+Install: f3:amd64 (8.0-1)
+End-Date: 2024-11-04  16:31:06
+
+Start-Date: 2024-11-05  05:00:23
+Commandline: apt-get -y --allow-downgrades full-upgrade
+Upgrade: discord:amd64 (0.0.72, 0.0.73), cosmic-files:amd64 (0.1.0~1730233777~22.04~20f9292, 0.1.0~1730498519~22.04~1297d59), cosmic-edit:amd64 (0.1.0~1730235386~22.04~3d92409, 0.1.0~1730496488~22.04~dcae5fa), libopenjp2-7:amd64 (2.4.0-6ubuntu0.1, 2.4.0-6ubuntu0.2)
+End-Date: 2024-11-05  05:00:27
+
+Start-Date: 2024-11-05  11:56:11
+Commandline: /usr/bin/apt install -y /home/mbeware/Downloads/waveterm-linux-amd64-0.9.1.deb
+Requested-By: mbeware (1000)
+Upgrade: waveterm:amd64 (0.7.6, 0.9.1)
+End-Date: 2024-11-05  11:56:23
+
+Start-Date: 2024-11-06  05:00:29
+Commandline: apt-get -y --allow-downgrades full-upgrade
+Upgrade: google-chrome-stable:amd64 (130.0.6723.91-1, 130.0.6723.116-1), cosmic-term:amd64 (0.1.0~1730247563~22.04~eba2eb3, 0.1.0~1730824353~22.04~5e96751), libmpg123-0:amd64 (1.29.3-1build1, 1.29.3-1ubuntu0.1), cosmic-files:amd64 (0.1.0~1730498519~22.04~1297d59, 0.1.0~1730824105~22.04~39e88cb), cosmic-edit:amd64 (0.1.0~1730496488~22.04~dcae5fa, 0.1.0~1730833343~22.04~ad77eb5), cosmic-store:amd64 (0.1.0~1730234114~22.04~d78e23e, 0.1.0~1730833393~22.04~e473c2c)
+End-Date: 2024-11-06  05:00:36
+
+Start-Date: 2024-11-08  22:12:29
+Commandline: packagekit role='update-packages'
+Requested-By: mbeware (1000)
+Upgrade: cosmic-term:amd64 (0.1.0~1730824353~22.04~5e96751, 0.1.0~1730945261~22.04~222d3fb), cosmic-files:amd64 (0.1.0~1730824105~22.04~39e88cb, 0.1.0~1730945036~22.04~93470fa), cosmic-edit:amd64 (0.1.0~1730833343~22.04~ad77eb5, 0.1.0~1730945219~22.04~9ae988d), cosmic-store:amd64 (0.1.0~1730833393~22.04~e473c2c, 0.1.0~1730945231~22.04~e61ee5a), code:amd64 (1.95.1-1730355339, 1.95.2-1730981514)
+End-Date: 2024-11-08  22:12:46
+
+Start-Date: 2024-11-08  22:54:02
+Commandline: packagekit role='install-packages'
+Requested-By: mbeware (1000)
+Install: foot-terminfo:amd64 (1.11.0-2, automatic), foot:amd64 (1.11.0-2), libfcft4:amd64 (3.0.1-2, automatic)
+End-Date: 2024-11-08  22:54:03
+
+Start-Date: 2024-11-08  22:55:58
+Commandline: packagekit role='remove-packages'
+Requested-By: mbeware (1000)
+Remove: foot-terminfo:amd64 (1.11.0-2), foot:amd64 (1.11.0-2), libfcft4:amd64 (3.0.1-2)
+End-Date: 2024-11-08  22:55:59
+
+Start-Date: 2024-11-11  05:00:23
+Commandline: apt-get -y --allow-downgrades full-upgrade
+Upgrade: openjdk-11-jdk:amd64 (11.0.24+8-1ubuntu3~22.04, 11.0.25+9-1ubuntu1~22.04), openjdk-11-jre:amd64 (11.0.24+8-1ubuntu3~22.04, 11.0.25+9-1ubuntu1~22.04), openjdk-11-jre-headless:amd64 (11.0.24+8-1ubuntu3~22.04, 11.0.25+9-1ubuntu1~22.04), openjdk-11-jdk-headless:amd64 (11.0.24+8-1ubuntu3~22.04, 11.0.25+9-1ubuntu1~22.04)
+End-Date: 2024-11-11  05:00:26
+
+Start-Date: 2024-11-12  05:00:19
+Commandline: apt-get -y --allow-downgrades full-upgrade
+Upgrade: cosmic-term:amd64 (0.1.0~1730945261~22.04~222d3fb, 0.1.0~1731349892~22.04~353bbbe), cosmic-files:amd64 (0.1.0~1730945036~22.04~93470fa, 0.1.0~1731350287~22.04~6312681)
+End-Date: 2024-11-12  05:00:21
+
+Start-Date: 2024-11-13  05:00:27
+Commandline: apt-get -y --allow-downgrades full-upgrade
+Upgrade: discord:amd64 (0.0.73, 0.0.74), google-chrome-stable:amd64 (130.0.6723.116-1, 131.0.6778.69-1), ghostscript-x:amd64 (9.55.0~dfsg1-0ubuntu5.9, 9.55.0~dfsg1-0ubuntu5.10), cosmic-files:amd64 (0.1.0~1731350287~22.04~6312681, 0.1.0~1731370964~22.04~b7ef7f8), libgs9-common:amd64 (9.55.0~dfsg1-0ubuntu5.9, 9.55.0~dfsg1-0ubuntu5.10), libmysqlclient21:amd64 (8.0.39-0ubuntu0.22.04.1, 8.0.40-0ubuntu0.22.04.1), ghostscript:amd64 (9.55.0~dfsg1-0ubuntu5.9, 9.55.0~dfsg1-0ubuntu5.10), libgs9:amd64 (9.55.0~dfsg1-0ubuntu5.9, 9.55.0~dfsg1-0ubuntu5.10)
+End-Date: 2024-11-13  05:00:36
